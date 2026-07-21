@@ -10,9 +10,10 @@ class Solution {
             list.add(nums2[i]);
         }
         Collections.sort(list);
-        for(int i=0;i<list.size();i++)
-        {
-            nums1[i]=list.get(i);
-        }
+       // return list;
+       for(int i=0;i<list.size();i++)
+       {
+        nums1[i]=list.get(i);
+       }
     }
 }
