@@ -8,13 +8,10 @@ class Solution {
                 list.add(nums[i]);
             }
         }
-            for(int i=0;i<list.size();i++)
-            {
-                nums[i]=list.get(i);
-            }
-          
-        
+        for(int i=0;i<list.size();i++)
+        {
+            nums[i]=list.get(i);
+        }
         return list.size();
-        
     }
 }
