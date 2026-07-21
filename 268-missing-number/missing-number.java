@@ -1,12 +1,24 @@
 class Solution {
     public int missingNumber(int[] nums) {
-        int n=nums.length;
-        int exp=n*(n+1)/2;
-        int actual=0;
-        for(int i=0;i<n;i++)
+         for(int i=0;i<=nums.length;i++)
         {
-          actual=actual+nums[i];
+            boolean found=false;
+            for(int j=0;j<nums.length;j++)
+            {
+                if(nums[j]==i)
+                {
+                    found=true;
+                    break;
+                }
+             
+            }
+               if(!found)
+            {
+                return i;
+            }
         }
-        return exp-actual;
+            
+      
+        return -1;
     }
 }
