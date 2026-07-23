@@ -1,16 +1,17 @@
 class Solution {
-    public int[] plusOne(int[] nums) {
-        for(int i=nums.length-1;i>=0;i--)
+    public int[] plusOne(int[] dig) {
+        for(int i=dig.length-1;i>=0;i--)
         {
-            if(nums[i]<9)
+            if(dig[i]<9)
             {
-                nums[i]++;
-                return nums;
-            }
-            nums[i]=0;
+                dig[i]++;
+                return dig;
+             }
+             dig[i]=0;
         }
-        int arr[]=new int[nums.length+1];
-       arr[0]=1;
-       return arr;
+        int arr[]=new int[dig.length+1];
+        arr[0]=1;
+        return arr;
+        
     }
 }
