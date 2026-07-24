@@ -6,12 +6,11 @@ class Solution {
             {
                 dig[i]++;
                 return dig;
-             }
-             dig[i]=0;
+            }
+            dig[i]=0;
         }
         int arr[]=new int[dig.length+1];
         arr[0]=1;
         return arr;
-        
     }
 }
