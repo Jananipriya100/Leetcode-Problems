@@ -4,15 +4,14 @@ class Solution {
         {
             return false;
         }
-        char c[]=s.toCharArray();
-        char b[]=t.toCharArray();
-        Arrays.sort(c);
-        Arrays.sort(b);
-        if(Arrays.equals(c,b))
-        {
-            return true;
-        }
- return false;
+        char ch[]=s.toCharArray();
+        char ch1[]=t.toCharArray();
+        Arrays.sort(ch);
+        Arrays.sort(ch1);
+        return Arrays.equals(ch,ch1);
+        
+
+
         
     }
 }
