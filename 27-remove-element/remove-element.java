@@ -1,16 +1,17 @@
 class Solution {
     public int removeElement(int[] nums, int val) {
-        int n=0;
-        for(int i=0;i<nums.length;i++)
-        {
-            if(nums[i]!=val)
-            {
-                nums[n]=nums[i];
-                n++;
-                 
+        List<Integer> al= new LinkedList<>();
+        // for(int i=0; i<nums.length; i++){
+        //     al.add(nums[i]);
+        // }
+        int i=0;
+        for(int j=0; j<nums.length; j++){
+            if(nums[j]!=val){
+                nums[i]=nums[j]+nums[i]-(nums[j]=nums[i]);
+                al.add(nums[i]);
+                i++;
             }
         }
-        return n;
-       
+        return al.size();
     }
 }
